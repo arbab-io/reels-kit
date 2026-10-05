@@ -1,0 +1,6 @@
+{
+  "name": "reels-kit/expo-video",
+  "main": "../lib/commonjs/adapters/expo-video/index.js",
+  "module": "../lib/module/adapters/expo-video/index.js",
+  "types": "../lib/typescript/commonjs/src/adapters/expo-video/index.d.ts"
+}

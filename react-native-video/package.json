@@ -1,0 +1,6 @@
+{
+  "name": "reels-kit/react-native-video",
+  "main": "../lib/commonjs/adapters/react-native-video/index.js",
+  "module": "../lib/module/adapters/react-native-video/index.js",
+  "types": "../lib/typescript/commonjs/src/adapters/react-native-video/index.d.ts"
+}
