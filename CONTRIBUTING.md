@@ -4,6 +4,10 @@ Contributions are always welcome, no matter how large or small!
 
 We want this community to be friendly and respectful to each other. Please follow it in all your interactions with the project. Before contributing, please read the [code of conduct](./CODE_OF_CONDUCT.md).
 
+## License of contributions
+
+This project is licensed under the [Apache License 2.0](./LICENSE). By submitting a contribution you agree that it is licensed under the same terms, and the [NOTICE](./NOTICE) attribution stays in place.
+
 ## Development workflow
 
 This project is a monorepo managed using [Yarn workspaces](https://yarnpkg.com/features/workspaces). It contains the following packages:

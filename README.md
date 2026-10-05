@@ -259,6 +259,17 @@ import type { ReelVideoComponent } from 'reels-kit';
 
 ## Contributing
 
+`reels-kit` is open for contributors. Bug reports, fixes, docs and new features are all welcome, whatever the size.
+
+Places where help is most useful right now:
+
+- Testing on Android and on physical devices, and reporting what breaks
+- The `expo-video` adapter (currently a stub)
+- Right-to-left layouts, pull to refresh and the retry flow
+- Tests for `useCursorPagination`, `useFeedTargetItem` and the gesture hooks
+
+Open an [issue](https://github.com/arbab-io/reels-kit/issues) to discuss a change, or send a pull request.
+
 - [Development workflow](CONTRIBUTING.md#development-workflow)
 - [Sending a pull request](CONTRIBUTING.md#sending-a-pull-request)
 - [Code of conduct](CODE_OF_CONDUCT.md)
