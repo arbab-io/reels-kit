@@ -5,9 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@arbab-io/reels-kit@workspace:.":
+"@arbab-rafiq/reels-kit@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@arbab-io/reels-kit@workspace:."
+  resolution: "@arbab-rafiq/reels-kit@workspace:."
   dependencies:
     "@eslint/compat": "npm:^2.1.0"
     "@eslint/eslintrc": "npm:^3.3.5"

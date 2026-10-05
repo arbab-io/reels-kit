@@ -23,7 +23,7 @@ Pin the peers. A newer Reanimated may require a newer React Native than the app 
 (Reanimated 4.7.x needs RN 0.86+; 4.5.3 supports RN 0.83 to 0.86).
 
 ```sh
-npm install --save-exact ~/Desktop/arbab-io-reels-kit-0.1.0.tgz \
+npm install --save-exact ~/Desktop/arbab-rafiq-reels-kit-0.1.0.tgz \
   @shopify/flash-list@2.3.2 \
   react-native-reanimated@4.5.3 \
   react-native-worklets@0.11.4 \
@@ -32,7 +32,7 @@ npm install --save-exact ~/Desktop/arbab-io-reels-kit-0.1.0.tgz \
   react-native-svg@15.15.5
 ```
 
-`react-native-video` is only needed for the `@arbab-io/reels-kit/react-native-video` adapter.
+`react-native-video` is only needed for the `@arbab-rafiq/reels-kit/react-native-video` adapter.
 `react-native-svg` is only used by this demo for the comment and share icons.
 
 ## 4. babel.config.js
@@ -64,9 +64,9 @@ import {
   ScrubBar,
   useFeedTapGesture,
   usePlaybackGate,
-} from '@arbab-io/reels-kit';
-import type { ReelsFeedRenderItemInfo, ReelVideoHandle } from '@arbab-io/reels-kit';
-import { RNVideoAdapter } from '@arbab-io/reels-kit/react-native-video';
+} from '@arbab-rafiq/reels-kit';
+import type { ReelsFeedRenderItemInfo, ReelVideoHandle } from '@arbab-rafiq/reels-kit';
+import { RNVideoAdapter } from '@arbab-rafiq/reels-kit/react-native-video';
 
 interface Reel {
   id: string;
