@@ -1,5 +1,9 @@
 # reels-kit
 
+[![npm version](https://img.shields.io/npm/v/reels-kit.svg)](https://www.npmjs.com/package/reels-kit)
+[![license](https://img.shields.io/npm/l/reels-kit.svg)](LICENSE)
+[![CI](https://github.com/arbab-io/reels-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/arbab-io/reels-kit/actions/workflows/ci.yml)
+
 A vertical, Instagram Reels-style video feed for React Native, built on FlashList 2.
 You get the hard parts: snap paging, only a few players mounted at a time, playback that pauses when it should, tap and scrub gestures, and retry on failed loads. The layout around the video is yours to build.
 
