@@ -20,7 +20,9 @@ You get the hard parts: snap paging, only a few players mounted at a time, playb
 
 ## Status
 
-Pre-release (`0.1.0`). Verified so far on the **iOS simulator** in an empty React Native 0.85 app: paging and snapping, video playback through the `react-native-video` adapter, single tap, double tap, scrubbing, the mute indicator, the error state for a broken URL, and the headless components below.
+**Initial release (`0.1.0`).** The feed, gestures and components are ready to use on iOS. As a `0.x` version, the API may still change in minor releases.
+
+Verified so far on the **iOS simulator** in an empty React Native 0.85 app: paging and snapping, video playback through the `react-native-video` adapter, single tap, double tap, scrubbing, the mute indicator, the error state for a broken URL, and the headless components below.
 
 **Not yet verified:** Android, a physical device, right-to-left layouts, the retry button after a failed load, pull to refresh, `onEndReached`, `onItemImpression`, the imperative ref, `useCursorPagination` and `useFeedTargetItem`. The `expo-video` adapter is a stub and throws if used.
 
