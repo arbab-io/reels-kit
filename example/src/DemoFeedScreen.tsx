@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { ReelsFeed } from '@arbab-rafiq/reels-kit';
-import type { ReelsFeedRenderItemInfo } from '@arbab-rafiq/reels-kit';
+import { ReelsFeed } from 'reels-kit';
+import type { ReelsFeedRenderItemInfo } from 'reels-kit';
 
 // Paging, snap feel and active/render-radius gating with plain colored boxes,
 // before any video is involved.

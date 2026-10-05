@@ -5,47 +5,6 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@arbab-rafiq/reels-kit@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@arbab-rafiq/reels-kit@workspace:."
-  dependencies:
-    "@eslint/compat": "npm:^2.1.0"
-    "@eslint/eslintrc": "npm:^3.3.5"
-    "@eslint/js": "npm:^10.0.1"
-    "@jest/globals": "npm:^29.7.0"
-    "@react-native/babel-preset": "npm:0.85.0"
-    "@react-native/eslint-config": "npm:0.85.0"
-    "@react-native/jest-preset": "npm:0.85.0"
-    "@shopify/flash-list": "npm:^2.3.2"
-    "@types/react": "npm:^19.2.0"
-    "@types/react-test-renderer": "npm:19"
-    del-cli: "npm:^7.0.0"
-    eslint: "npm:^9.39.4"
-    eslint-config-prettier: "npm:^10.1.8"
-    eslint-plugin-ft-flow: "npm:^3.0.11"
-    eslint-plugin-prettier: "npm:^5.5.6"
-    jest: "npm:^29.7.0"
-    prettier: "npm:^3.8.3"
-    react: "npm:19.2.3"
-    react-native: "npm:0.85.0"
-    react-native-builder-bob: "npm:^0.41.0"
-    react-native-gesture-handler: "npm:^3.2.1"
-    react-native-reanimated: "npm:^4.5.3"
-    react-native-video: "npm:^6.19.2"
-    react-native-worklets: "npm:^0.11.4"
-    react-test-renderer: "npm:19.2.3"
-    turbo: "npm:^2.9.16"
-    typescript: "npm:^6.0.3"
-  peerDependencies:
-    "@shopify/flash-list": ">=2.0.0"
-    react: ">=19.0.0"
-    react-native: ">=0.82.0"
-    react-native-gesture-handler: ">=3.0.0"
-    react-native-reanimated: ">=4.0.0"
-    react-native-worklets: "*"
-  languageName: unknown
-  linkType: soft
-
 "@ark/schema@npm:0.56.2":
   version: 0.56.2
   resolution: "@ark/schema@npm:0.56.2"
@@ -8124,6 +8083,47 @@ __metadata:
     react-native-monorepo-config: "npm:^0.4.0"
     react-native-reanimated: "npm:^4.5.3"
     react-native-worklets: "npm:^0.11.4"
+  languageName: unknown
+  linkType: soft
+
+"reels-kit@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "reels-kit@workspace:."
+  dependencies:
+    "@eslint/compat": "npm:^2.1.0"
+    "@eslint/eslintrc": "npm:^3.3.5"
+    "@eslint/js": "npm:^10.0.1"
+    "@jest/globals": "npm:^29.7.0"
+    "@react-native/babel-preset": "npm:0.85.0"
+    "@react-native/eslint-config": "npm:0.85.0"
+    "@react-native/jest-preset": "npm:0.85.0"
+    "@shopify/flash-list": "npm:^2.3.2"
+    "@types/react": "npm:^19.2.0"
+    "@types/react-test-renderer": "npm:19"
+    del-cli: "npm:^7.0.0"
+    eslint: "npm:^9.39.4"
+    eslint-config-prettier: "npm:^10.1.8"
+    eslint-plugin-ft-flow: "npm:^3.0.11"
+    eslint-plugin-prettier: "npm:^5.5.6"
+    jest: "npm:^29.7.0"
+    prettier: "npm:^3.8.3"
+    react: "npm:19.2.3"
+    react-native: "npm:0.85.0"
+    react-native-builder-bob: "npm:^0.41.0"
+    react-native-gesture-handler: "npm:^3.2.1"
+    react-native-reanimated: "npm:^4.5.3"
+    react-native-video: "npm:^6.19.2"
+    react-native-worklets: "npm:^0.11.4"
+    react-test-renderer: "npm:19.2.3"
+    turbo: "npm:^2.9.16"
+    typescript: "npm:^6.0.3"
+  peerDependencies:
+    "@shopify/flash-list": ">=2.0.0"
+    react: ">=19.0.0"
+    react-native: ">=0.82.0"
+    react-native-gesture-handler: ">=3.0.0"
+    react-native-reanimated: ">=4.0.0"
+    react-native-worklets: "*"
   languageName: unknown
   linkType: soft
 

@@ -4,7 +4,7 @@ A vertical, Instagram Reels-style video feed for React Native, built on FlashLis
 You get the hard parts: snap paging, only a few players mounted at a time, playback that pauses when it should, tap and scrub gestures, and retry on failed loads. The layout around the video is yours to build.
 
 - **Headless building blocks, no fixed layout.** Compose the cell from small components (action buttons, avatar, follow button, caption, scrub bar, overlays) and style them freely.
-- **Bring your own video engine.** The core imports no video library. A `react-native-video` adapter ships as `@arbab-rafiq/reels-kit/react-native-video`; you can write your own adapter for anything else.
+- **Bring your own video engine.** The core imports no video library. A `react-native-video` adapter ships as `reels-kit/react-native-video`; you can write your own adapter for anything else.
 - **Bounded memory.** Only the active reel and its neighbours (`mediaRenderRadius`) mount a native player.
 - **No bundled icons or assets.** Every icon is a `ReactNode` you pass in.
 
@@ -40,7 +40,7 @@ Tested with React Native 0.85.0, FlashList 2.3.2, Reanimated 4.5.3, worklets 0.1
 ## Installation
 
 ```sh
-npm install @arbab-rafiq/reels-kit @shopify/flash-list react-native-reanimated react-native-worklets react-native-gesture-handler
+npm install reels-kit @shopify/flash-list react-native-reanimated react-native-worklets react-native-gesture-handler
 ```
 
 If you use the bundled `react-native-video` adapter, install it yourself. `reels-kit` never installs a video engine for you:
@@ -82,9 +82,9 @@ import {
   ScrubBar,
   useFeedTapGesture,
   usePlaybackGate,
-} from '@arbab-rafiq/reels-kit';
-import type { ReelsFeedRenderItemInfo, ReelVideoHandle } from '@arbab-rafiq/reels-kit';
-import { RNVideoAdapter } from '@arbab-rafiq/reels-kit/react-native-video';
+} from 'reels-kit';
+import type { ReelsFeedRenderItemInfo, ReelVideoHandle } from 'reels-kit';
+import { RNVideoAdapter } from 'reels-kit/react-native-video';
 
 interface Reel {
   id: string;
@@ -253,13 +253,13 @@ Customizing icons, avatar and follow button: [docs/customization.md](docs/custom
 An adapter is a component with this shape, so any engine can be plugged in:
 
 ```ts
-import type { ReelVideoComponent } from '@arbab-rafiq/reels-kit';
+import type { ReelVideoComponent } from 'reels-kit';
 // props: sourceUri, paused, muted, repeat, resizeMode, onLoad, onProgress,
 //        onReadyForDisplay, onBuffer, onEnd, onError, audio, style
 // ref:   { seek(seconds) }
 ```
 
-`RNVideoAdapter` (from `@arbab-rafiq/reels-kit/react-native-video`) implements it on top of `react-native-video`.
+`RNVideoAdapter` (from `reels-kit/react-native-video`) implements it on top of `react-native-video`.
 
 ## Contributing
 
