@@ -8,7 +8,7 @@ import type {
 } from '../../video/types';
 
 // This is the ONLY file in the package that imports react-native-video —
-// consumers who never import 'reels-kit/react-native-video' never pull it in.
+// consumers who never import '@arbab-io/reels-kit/react-native-video' never pull it in.
 
 export const RNVideoAdapter: ReelVideoComponent = forwardRef<
   ReelVideoHandle,

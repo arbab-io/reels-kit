@@ -1,5 +1,5 @@
 {
-  "name": "reels-kit",
+  "name": "@arbab-io/reels-kit",
   "version": "0.1.0",
   "description": "Generic, FlashList-powered vertical video feed (Instagram Reels-style) for React Native, with pluggable video adapters",
   "main": "./lib/commonjs/index.js",
@@ -64,7 +64,8 @@
   },
   "homepage": "https://github.com/arbab-io/reels-kit#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@eslint/compat": "^2.1.0",
