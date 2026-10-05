@@ -45,6 +45,7 @@
     "lib",
     "react-native-video",
     "expo-video",
+    "NOTICE",
     "!**/__tests__",
     "!**/__fixtures__",
     "!**/__mocks__",
@@ -68,7 +69,7 @@
     "url": "git+https://github.com/arbab-io/reels-kit.git"
   },
   "author": "arbab-io (https://github.com/arbab-io)",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/arbab-io/reels-kit/issues"
   },

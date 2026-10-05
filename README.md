@@ -265,4 +265,6 @@ import type { ReelVideoComponent } from 'reels-kit';
 
 ## License
 
-MIT
+Created and owned by arbab-io. Licensed under the [Apache License, Version 2.0](LICENSE).
+
+If you fork or redistribute this project, the license requires you to keep the [NOTICE](NOTICE) attribution and the copyright notices, and to state any changes you made.
