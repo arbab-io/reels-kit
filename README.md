@@ -1,10 +1,16 @@
-# reels-kit
+# React Native Reels Kit
 
-[![npm version](https://img.shields.io/npm/v/reels-kit.svg)](https://www.npmjs.com/package/reels-kit)
-[![license](https://img.shields.io/npm/l/reels-kit.svg)](LICENSE)
+A highly customizable React Native toolkit for building Instagram Reels-style vertical video feeds, with snap paging, tap and scrub gestures and pluggable video adapters, built on FlashList.
+
+[![npm](https://img.shields.io/npm/v/reels-kit.svg?label=npm)](https://www.npmjs.com/package/reels-kit)
+[![downloads](https://img.shields.io/npm/dm/reels-kit.svg?label=downloads)](https://www.npmjs.com/package/reels-kit)
+[![bundlephobia](https://img.shields.io/bundlephobia/minzip/reels-kit?label=bundlephobia)](https://bundlephobia.com/package/reels-kit)
+[![React Native](https://img.shields.io/badge/React%20Native-%3E%3D0.82.0-blue)](https://reactnative.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-blue)](https://www.typescriptlang.org)
+[![license](https://img.shields.io/npm/l/reels-kit?label=license&color=green)](LICENSE)
 [![CI](https://github.com/arbab-io/reels-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/arbab-io/reels-kit/actions/workflows/ci.yml)
+[![GitHub stars](https://img.shields.io/github/stars/arbab-io/reels-kit?style=social)](https://github.com/arbab-io/reels-kit)
 
-A vertical, Instagram Reels-style video feed for React Native, built on FlashList 2.
 You get the hard parts: snap paging, only a few players mounted at a time, playback that pauses when it should, tap and scrub gestures, and retry on failed loads. The layout around the video is yours to build.
 
 - **Headless building blocks, no fixed layout.** Compose the cell from small components (action buttons, avatar, follow button, caption, scrub bar, overlays) and style them freely.
