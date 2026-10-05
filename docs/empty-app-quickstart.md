@@ -47,7 +47,7 @@ module.exports = {
 ## 5. App.tsx
 
 ```tsx
-import { useCallback, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { GestureDetector, GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useRecyclingState } from '@shopify/flash-list';
@@ -65,7 +65,7 @@ import {
   useFeedTapGesture,
   usePlaybackGate,
 } from 'reels-kit';
-import type { ReelsFeedRenderItemInfo } from 'reels-kit';
+import type { ReelsFeedRenderItemInfo, ReelVideoHandle } from 'reels-kit';
 import { RNVideoAdapter } from 'reels-kit/react-native-video';
 
 interface Reel {
@@ -148,6 +148,7 @@ function ReelCell({
   onToggleMute: () => void;
 } & Omit<ReelsFeedRenderItemInfo<Reel>, 'item' | 'index'>) {
   const paused = usePlaybackGate({ isActive, isFocused, isForeground });
+  const videoRef = useRef<ReelVideoHandle>(null);
   // Per-cell state resets when FlashList recycles this cell onto another reel.
   const [time, setTime] = useRecyclingState(0, [reel.id]);
   const [duration, setDuration] = useRecyclingState(0, [reel.id]);
@@ -174,6 +175,7 @@ function ReelCell({
         <View style={StyleSheet.absoluteFill}>
           {shouldRenderMedia ? (
             <FeedVideoSlot
+              ref={videoRef}
               VideoComponent={RNVideoAdapter}
               sourceUri={reel.uri}
               paused={paused}
@@ -238,7 +240,7 @@ function ReelCell({
       <ScrubBar
         durationSec={duration}
         currentTimeSec={time}
-        onSeek={() => {}}
+        onSeek={(seconds) => videoRef.current?.seek(seconds)}
         style={[styles.scrubBar, { bottom: BOTTOM_INSET }]}
       />
     </View>

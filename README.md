@@ -20,11 +20,11 @@ You get the hard parts: snap paging, only a few players mounted at a time, playb
 
 ## Status
 
-**Initial release (`0.1.0`).** The feed, gestures and components are ready to use on iOS. As a `0.x` version, the API may still change in minor releases.
+**Initial release (`0.1.0`).** The feed, gestures and components are ready to use on iOS and Android. As a `0.x` version, the API may still change in minor releases.
 
-Verified so far on the **iOS simulator** in an empty React Native 0.85 app: paging and snapping, video playback through the `react-native-video` adapter, single tap, double tap, scrubbing, the mute indicator, the error state for a broken URL, and the headless components below.
+Tested on the iOS simulator and on an Android 16 emulator, each in an empty React Native 0.85 app: paging and snapping, video playback through the `react-native-video` adapter, single tap, double tap, scrubbing and seeking, the mute indicator and the headless components. On Android, the load-error state with retry and loading more through `onEndReached` were checked as well. `useCursorPagination` and `useFeedTargetItem` are covered by unit tests.
 
-**Not yet verified:** Android, a physical device, right-to-left layouts, the retry button after a failed load, pull to refresh, `onEndReached`, `onItemImpression`, the imperative ref, `useCursorPagination` and `useFeedTargetItem`. The `expo-video` adapter is a stub and throws if used.
+Not tested yet: physical devices, right-to-left layouts, pull to refresh, `onItemImpression` and the imperative ref. The `expo-video` adapter is a stub and throws if used.
 
 ## Requirements
 
@@ -66,7 +66,7 @@ Then:
 ## Quick start
 
 ```tsx
-import { useCallback, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import {
   GestureDetector,
@@ -83,7 +83,7 @@ import {
   useFeedTapGesture,
   usePlaybackGate,
 } from 'reels-kit';
-import type { ReelsFeedRenderItemInfo } from 'reels-kit';
+import type { ReelsFeedRenderItemInfo, ReelVideoHandle } from 'reels-kit';
 import { RNVideoAdapter } from 'reels-kit/react-native-video';
 
 interface Reel {
@@ -114,6 +114,7 @@ function ReelCell({
   // Pause unless this is the active reel, the screen is focused and the app
   // is in the foreground.
   const paused = usePlaybackGate({ isActive, isFocused, isForeground });
+  const videoRef = useRef<ReelVideoHandle>(null);
 
   // Per-cell state that resets when FlashList recycles the cell for a new reel.
   const [time, setTime] = useRecyclingState(0, [item.id]);
@@ -133,6 +134,7 @@ function ReelCell({
         <View style={StyleSheet.absoluteFill}>
           {shouldRenderMedia ? (
             <FeedVideoSlot
+              ref={videoRef}
               VideoComponent={RNVideoAdapter}
               sourceUri={item.uri}
               paused={paused}
@@ -149,7 +151,7 @@ function ReelCell({
       <ScrubBar
         durationSec={duration}
         currentTimeSec={time}
-        onSeek={() => {}}
+        onSeek={(seconds) => videoRef.current?.seek(seconds)}
         style={styles.scrubBar}
       />
     </View>
