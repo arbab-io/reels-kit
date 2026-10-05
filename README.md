@@ -40,13 +40,33 @@ Tested with React Native 0.85.0, FlashList 2.3.2, Reanimated 4.5.3, worklets 0.1
 ## Installation
 
 ```sh
+# npm
 npm install reels-kit @shopify/flash-list react-native-reanimated react-native-worklets react-native-gesture-handler
+
+# yarn
+yarn add reels-kit @shopify/flash-list react-native-reanimated react-native-worklets react-native-gesture-handler
+
+# pnpm
+pnpm add reels-kit @shopify/flash-list react-native-reanimated react-native-worklets react-native-gesture-handler
+
+# bun
+bun add reels-kit @shopify/flash-list react-native-reanimated react-native-worklets react-native-gesture-handler
 ```
 
 If you use the bundled `react-native-video` adapter, install it yourself. `reels-kit` never installs a video engine for you:
 
 ```sh
+# npm
 npm install react-native-video
+
+# yarn
+yarn add react-native-video
+
+# pnpm
+pnpm add react-native-video
+
+# bun
+bun add react-native-video
 ```
 
 Then:
