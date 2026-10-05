@@ -1,20 +1,17 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'reels-kit';
-
-const result = multiply(3, 7);
+import { StyleSheet } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import DemoFeedScreen from './DemoFeedScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <GestureHandlerRootView style={styles.root}>
+      <DemoFeedScreen />
+    </GestureHandlerRootView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  root: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });

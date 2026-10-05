@@ -10,8 +10,12 @@
     "build:ios": "react-native build-ios --mode Debug"
   },
   "dependencies": {
+    "@shopify/flash-list": "^2.3.2",
     "react": "19.2.3",
-    "react-native": "0.85.0"
+    "react-native": "0.85.0",
+    "react-native-gesture-handler": "^3.2.1",
+    "react-native-reanimated": "^4.5.3",
+    "react-native-worklets": "^0.11.4"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
