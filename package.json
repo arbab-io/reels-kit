@@ -87,6 +87,7 @@
     "@react-native/jest-preset": "0.85.0",
     "@shopify/flash-list": "^2.3.2",
     "@types/react": "^19.2.0",
+    "@types/react-test-renderer": "19",
     "del-cli": "^7.0.0",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
@@ -101,6 +102,7 @@
     "react-native-reanimated": "^4.5.3",
     "react-native-video": "^6.19.2",
     "react-native-worklets": "^0.11.4",
+    "react-test-renderer": "19.2.3",
     "turbo": "^2.9.16",
     "typescript": "^6.0.3"
   },
