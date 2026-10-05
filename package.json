@@ -28,23 +28,12 @@
         "default": "./lib/commonjs/adapters/react-native-video/index.js"
       }
     },
-    "./expo-video": {
-      "import": {
-        "types": "./lib/typescript/module/src/adapters/expo-video/index.d.ts",
-        "default": "./lib/module/adapters/expo-video/index.js"
-      },
-      "require": {
-        "types": "./lib/typescript/commonjs/src/adapters/expo-video/index.d.ts",
-        "default": "./lib/commonjs/adapters/expo-video/index.js"
-      }
-    },
     "./package.json": "./package.json"
   },
   "files": [
     "src",
     "lib",
     "react-native-video",
-    "expo-video",
     "NOTICE",
     "!**/__tests__",
     "!**/__fixtures__",

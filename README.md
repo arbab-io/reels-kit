@@ -24,7 +24,7 @@ You get the hard parts: snap paging, only a few players mounted at a time, playb
 
 Tested on the iOS simulator and on an Android 16 emulator, each in an empty React Native 0.85 app: paging and snapping, video playback through the `react-native-video` adapter, single tap, double tap, scrubbing and seeking, the mute indicator and the headless components. On Android, the load-error state with retry and loading more through `onEndReached` were checked as well. `useCursorPagination` and `useFeedTargetItem` are covered by unit tests.
 
-Not tested yet: physical devices, right-to-left layouts, pull to refresh, `onItemImpression` and the imperative ref. The `expo-video` adapter is a stub and throws if used.
+Not tested yet: physical devices, right-to-left layouts, pull to refresh, `onItemImpression` and the imperative ref.
 
 ## Requirements
 
@@ -268,7 +268,7 @@ import type { ReelVideoComponent } from 'reels-kit';
 Places where help is most useful right now:
 
 - Testing on Android and on physical devices, and reporting what breaks
-- The `expo-video` adapter (currently a stub)
+- An `expo-video` adapter for Expo apps (only the `react-native-video` adapter exists today)
 - Right-to-left layouts, pull to refresh and the retry flow
 - Tests for `useCursorPagination`, `useFeedTargetItem` and the gesture hooks
 
