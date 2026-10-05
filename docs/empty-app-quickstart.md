@@ -23,7 +23,7 @@ Pin the peers. A newer Reanimated may require a newer React Native than the app 
 (Reanimated 4.7.x needs RN 0.86+; 4.5.3 supports RN 0.83 to 0.86).
 
 ```sh
-npm install --save-exact ~/Desktop/reels-kit-0.1.0.tgz \
+npm install --save-exact ~/Desktop/reels-kit-0.1.1.tgz \
   @shopify/flash-list@2.3.2 \
   react-native-reanimated@4.5.3 \
   react-native-worklets@0.11.4 \
