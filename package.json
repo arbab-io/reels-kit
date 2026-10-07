@@ -1,6 +1,6 @@
 {
   "name": "reels-kit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Generic, FlashList-powered vertical video feed (Instagram Reels-style) for React Native, with pluggable video adapters",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
@@ -51,7 +51,18 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "reels",
+    "video-feed",
+    "vertical-video",
+    "short-video",
+    "shorts",
+    "video-player",
+    "flashlist",
+    "gesture-handler",
+    "reanimated",
+    "react-native-video",
+    "typescript"
   ],
   "repository": {
     "type": "git",
