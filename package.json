@@ -1,6 +1,6 @@
 {
   "name": "reels-kit",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Instagram Reels-style vertical video feed for React Native: snap paging, only nearby players mounted, drag-to-seek bar and tap gestures. Built on FlashList.",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
@@ -67,7 +67,11 @@
     "reanimated",
     "ios",
     "android",
-    "typescript"
+    "typescript",
+    "react-native-instagram-reels",
+    "expo-instagram-reel",
+    "react-native-youtube-shorts",
+    "expo-youtube-shorts"
   ],
   "repository": {
     "type": "git",
